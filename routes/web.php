@@ -18,5 +18,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get("/", [HomeController::class,'index'] );
-Route::get("Contact", [HomeController::class,'contact'] );
+Route::get("/", [HomeController::class,'Index'] );
+Route::get("contact", [HomeController::class,'Contact'] );
+Route::get("detail", [HomeController::class,'Detail'] );
+Route::get("checkout", [HomeController::class,'Checkout'] );
+Route::get("cart", [HomeController::class,'Cart'] );
+Route::get("shop", [HomeController::class,'Shop'] );
