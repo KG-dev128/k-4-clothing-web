@@ -24,3 +24,4 @@ Route::get("detail", [HomeController::class,'Detail'] );
 Route::get("checkout", [HomeController::class,'Checkout'] );
 Route::get("cart", [HomeController::class,'Cart'] );
 Route::get("shop", [HomeController::class,'Shop'] );
+Route::get("login", [HomeController::class,'Login'] );
