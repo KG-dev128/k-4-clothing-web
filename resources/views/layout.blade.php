@@ -25,6 +25,7 @@
 </head>
 
 <body>
+ <!-- Topbar Start -->
     <div class="container-fluid">
         <div class="row bg-secondary py-2 px-xl-5">
             <div class="col-lg-6 d-none d-lg-block">
@@ -87,6 +88,7 @@
         </div>
     </div>
     <!-- Topbar End -->
+
     <!-- Navbar Start -->
     <div class="container-fluid mb-5">
         <div class="row border-top px-xl-5">
@@ -187,7 +189,7 @@
 
     @show
    
-       <!-- Footer Start -->
+    <!-- Footer Start -->
     <div class="container-fluid bg-secondary text-dark mt-5 pt-5">
         <div class="row px-xl-5 pt-5">
             <div class="col-lg-4 col-md-12 mb-5 pr-3 pr-xl-5">
