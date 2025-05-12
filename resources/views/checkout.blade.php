@@ -13,8 +13,6 @@
         </div>
     </div>
     <!-- Page Header End -->
-
-
     <!-- Checkout Start -->
     <div class="container-fluid pt-5">
         <div class="row px-xl-5">
