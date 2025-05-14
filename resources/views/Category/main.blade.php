@@ -25,13 +25,13 @@
   <link href="Admin/css/app-style.css" rel="stylesheet"/>
   
 </head>
-<body>
+<body class="bg-theme bg-theme9">
 
   <!--Start sidebar-wrapper-->
    <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
      <div class="brand-logo">
       <a href="index.html">
-       <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+       <img src="Admin/images/logo-icon.png" class="logo-icon" alt="logo icon">
        <h5 class="logo-text">Dashtreme Admin</h5>
      </a>
    </div>

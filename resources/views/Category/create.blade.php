@@ -1,7 +1,10 @@
-@extends('Category.main');
-@section('title');
+@extends('Category.main')
+@section('title', 'Add Category')
 @section('pagedata')
 {{-- create form --}}
+<div class="clearfix"></div>
+  <div class="content-wrapper">
+    <div class="container-fluid">
   <div class="row mt-3">
           <div class="col-lg-6">
         <div class="card">
@@ -25,5 +28,5 @@
           </form>
          </div>
          </div>
-      </div></div>
+      </div></div></div>
 @endsection
