@@ -171,20 +171,20 @@
 	<footer class="footer">
       <div class="container">
         <div class="text-center">
-          Copyright © 2018 Dashtreme Admin
+          Copyright © 2025 Klothin' Admin Kiran Gull
         </div>
       </div>
     </footer>
 	<!--End footer-->
 	
-  <!--start color switcher-->
+	<!--start color switcher-->
    <div class="right-sidebar">
     <div class="switcher-icon">
       <i class="zmdi zmdi-settings zmdi-hc-spin"></i>
     </div>
     <div class="right-sidebar-content">
 
-      <p class="mb-0">Gaussion Texture</p>
+      <p class="mb-0">Klothin' Themes</p>
       <hr>
       
       <ul class="switcher">
@@ -212,9 +212,8 @@
       </ul>
       
      </div>
-   </div>
+   </div></div>
   <!--end color switcher-->
-
 
      <!-- Bootstrap core JavaScript-->
   <script src="assets/js/jquery.min.js"></script>

@@ -2,6 +2,8 @@
 @section('title', 'Add Category')
 @section('pagedata')
 {{-- create form --}}
+<form method="POST" action="{{url('catSave')}}">
+    @csrf
 <div class="clearfix"></div>
   <div class="content-wrapper">
     <div class="container-fluid">
@@ -10,11 +12,14 @@
         <div class="card">
            <div class="card-body">
            <div class="card-title">Add New Category</div>
+                      <div class="form-group">
+            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i> Add Category</button>
+          </div>
            <hr>
             <form>
            <div class="form-group">
             <label>Category Name</label>
-            <input type="text" class="form-control form-control-rounded" required  placeholder="Enter Category Name">
+            <input type="text"  name="catname" class="form-control form-control-rounded" required  placeholder="Enter Category Name">
            </div>
            <div class="form-group py-2">
              <div class="icheck-material-white">
@@ -25,8 +30,9 @@
            <div class="form-group">
             <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i> Add Category</button>
           </div>
+
           </form>
          </div>
          </div>
-      </div></div></div>
+      </div></div></div></form>
 @endsection
