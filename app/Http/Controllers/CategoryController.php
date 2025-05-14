@@ -8,6 +8,6 @@ class CategoryController extends Controller
 {
     public function Create()
     {
-        return view("create");
+        return view("Category.create");
     }
 }

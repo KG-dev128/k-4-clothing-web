@@ -1,4 +1,4 @@
-@extends('main');
+@extends('Category.main');
 @section('title');
 @section('pagedata')
 {{-- create form --}}
@@ -6,28 +6,12 @@
           <div class="col-lg-6">
         <div class="card">
            <div class="card-body">
-           <div class="card-title">Round Vertical Form</div>
+           <div class="card-title">Add New Category</div>
            <hr>
             <form>
            <div class="form-group">
-            <label for="input-6">Name</label>
-            <input type="text" class="form-control form-control-rounded" id="input-6" placeholder="Enter Your Name">
-           </div>
-           <div class="form-group">
-            <label for="input-7">Email</label>
-            <input type="text" class="form-control form-control-rounded" id="input-7" placeholder="Enter Your Email Address">
-           </div>
-           <div class="form-group">
-            <label for="input-8">Mobile</label>
-            <input type="text" class="form-control form-control-rounded" id="input-8" placeholder="Enter Your Mobile Number">
-           </div>
-           <div class="form-group">
-            <label for="input-9">Password</label>
-            <input type="text" class="form-control form-control-rounded" id="input-9" placeholder="Enter Password">
-           </div>
-           <div class="form-group">
-            <label for="input-10">Confirm Password</label>
-            <input type="text" class="form-control form-control-rounded" id="input-10" placeholder="Confirm Password">
+            <label>Category Name</label>
+            <input type="text" class="form-control form-control-rounded" required  placeholder="Enter Category Name">
            </div>
            <div class="form-group py-2">
              <div class="icheck-material-white">
@@ -36,7 +20,7 @@
             </div>
            </div>
            <div class="form-group">
-            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i> Register</button>
+            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i> Add Category</button>
           </div>
           </form>
          </div>
