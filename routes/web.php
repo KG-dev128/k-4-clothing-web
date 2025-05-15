@@ -28,5 +28,6 @@ Route::get("shop", [HomeController::class,'Shop'] );
 Route::get("login", [HomeController::class,'Login'] );
 
 
+Route::get('catindex',[CategoryController::class,'Index']); 
 Route::get('catCreate',[CategoryController::class,'Create']); 
 Route::post('catSave',[CategoryController::class,'Save']); 

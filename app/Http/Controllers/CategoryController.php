@@ -7,6 +7,11 @@ use Illuminate\Support\Facades\DB;
 
 class CategoryController extends Controller
 {
+    public function Index()
+    {
+        $res=DB::select('select * from category');
+        return view("Category.index",['res'=>$res]);
+    }
     public function Create()
     {
         return view("Category.create");
@@ -14,8 +19,8 @@ class CategoryController extends Controller
     public function Save(Request $req)
     {
 
-       $na= $req->imput('catname');
-      // DB::insert("INSERT INTO `category`(`cat_name`) VALUES (?)",[$na]);
-        return ("Data Saved");
+       $na= $req->input('catname');
+      DB::insert("INSERT INTO `category`(`cat_name`) VALUES (?)",[$na]);
+        return view("Category.save");
     }
 }
