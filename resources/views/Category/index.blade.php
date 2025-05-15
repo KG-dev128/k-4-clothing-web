@@ -17,10 +17,13 @@
                     </tr>
                   </thead>
                   <tbody>
+                    @foreach ( $res as $user)
+                    
                     <tr>
-                      <th scope="row">1</th>
-                      <td>Cell</td>
+                      <th scope="row">{{$user->cat_id}}</th>
+                      <td>{{$user->cat_name}}</td>
                     </tr>
+                    @endforeach
                    </tbody>
                 </table>
               </div>
