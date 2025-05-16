@@ -24,8 +24,8 @@ class CategoryController extends Controller
     public function Save(Request $req)
     {
 
-    //    $na= $req->input('catname');
-    //   DB::insert("INSERT INTO `category`(`cat_name`) VALUES (?)",[$na]);
-    //     return view("Category.index");
+       $na= $req->input('catname');
+      DB::insert("INSERT INTO `category`(`cat_name`) VALUES (?)",[$na]);
+        return view('Data has ben saved');
     }
 }

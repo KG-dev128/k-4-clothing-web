@@ -2,7 +2,6 @@
 @section('title', 'Add Category')
 @section('pagedata')
 
-
 <form method="POST" action="{{url('catSave')}}">
     @csrf
 <div class="clearfix"></div>
