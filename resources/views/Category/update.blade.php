@@ -1,7 +1,8 @@
 @extends('Category.main')
 @section('title', 'Add Category')
 @section('pagedata')
-{{-- create form --}}
+
+
 <form method="POST" action="{{url('catSave')}}">
     @csrf
 <div class="clearfix"></div>
@@ -13,6 +14,7 @@
            <div class="card-body">
            <div class="card-title">Add New Category</div>
                       <div class="form-group">
+            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i> Add Category</button>
           </div>
            <hr>
             <form>
@@ -27,11 +29,11 @@
             </div>
            </div>
            <div class="form-group">
-            <button type="submit" href="Category.index" class="btn btn-light btn-round px-5"><i class="icon-lock"></i> Add Category</button>
+            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i>Update Category</button>
           </div>
 
           </form>
          </div>
          </div>
       </div></div></div></form>
-@endsection
+      @endsection

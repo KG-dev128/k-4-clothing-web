@@ -14,6 +14,8 @@
                     <tr>
                       <th scope="col">Category ID</th>
                       <th scope="col">Category Name</th>
+                      <th scope="col">Update Data</th>
+                      <th scope="col">Delete Data</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -22,6 +24,8 @@
                     <tr>
                       <th scope="row">{{$user->cat_id}}</th>
                       <td>{{$user->cat_name}}</td>
+                      <td><button type="button" class="btn btn-outline-success">Update Category</button></td>
+                      <td><button type="button" class="btn btn-outline-danger">Delete Category</button></td>
                     </tr>
                     @endforeach
                    </tbody>
@@ -29,7 +33,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div></div></div>
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script>
         $(document).ready( function () {

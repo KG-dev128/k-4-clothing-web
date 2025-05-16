@@ -170,13 +170,13 @@
 @show
 
 	<!--Start footer-->
-	<footer class="footer">
+	{{-- <footer class="footer">
       <div class="container">
         <div class="text-center">
           Copyright © 2025 Klothin' Admin Kiran Gull
         </div>
       </div>
-    </footer>
+    </footer> --}}
 	<!--End footer-->
 	
 	<!--start color switcher-->

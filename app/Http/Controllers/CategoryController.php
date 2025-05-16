@@ -12,6 +12,11 @@ class CategoryController extends Controller
         $res=DB::select('select * from category');
         return view("Category.index",['res'=>$res]);
     }
+    public function Update()
+    {
+        // $res=DB::select('UPDATE `category` SET `cat_name`='[?]' WHERE (``) ');
+        // return view("Category.update",['res'=>$res]);
+    }
     public function Create()
     {
         return view("Category.create");
@@ -19,8 +24,8 @@ class CategoryController extends Controller
     public function Save(Request $req)
     {
 
-       $na= $req->input('catname');
-      DB::insert("INSERT INTO `category`(`cat_name`) VALUES (?)",[$na]);
-        return view("Category.save");
+    //    $na= $req->input('catname');
+    //   DB::insert("INSERT INTO `category`(`cat_name`) VALUES (?)",[$na]);
+    //     return view("Category.index");
     }
 }
