@@ -23,6 +23,8 @@
   <link href="Admin/css/sidebar-menu.css" rel="stylesheet"/>
   <!-- Custom Style-->
   <link href="Admin/css/app-style.css" rel="stylesheet"/>
+  <!-- Data table jquery css-->
+  <link rel="stylesheet" href="https://cdn.datatables.net/2.3.1/css/dataTables.dataTables.css" />
   
 </head>
 <body class="bg-theme bg-theme9">
@@ -231,7 +233,8 @@
   <!-- Chart js -->
   
   <script src="assets/plugins/Chart.js/Chart.min.js"></script>
- 
+ <!-- Jquery datatable js-->
+ <script src="https://cdn.datatables.net/2.3.1/js/dataTables.js"></script>
   <!-- Index js -->
   <script src="assets/js/index.js"></script>
 

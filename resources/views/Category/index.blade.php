@@ -9,7 +9,7 @@
             <div class="card-body">
               <h5 class="card-title">All Categories</h5>
               <div class="table-responsive">
-                <table class="table">
+                <table class="table display" id="myTable">
                   <thead>
                     <tr>
                       <th scope="col">Category ID</th>
@@ -30,4 +30,9 @@
             </div>
           </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+        $(document).ready( function () {
+    $('#myTable').DataTable();
+} );</script>
 @endsection
