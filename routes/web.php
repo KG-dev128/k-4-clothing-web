@@ -27,4 +27,6 @@ Route::get("cart", [HomeController::class,'Cart'] );
 Route::get("shop", [HomeController::class,'Shop'] );
 Route::get("login", [HomeController::class,'Login'] );
 
+Route::get("catCreate", [CategoryController ::class,'Create'] );
+
 
