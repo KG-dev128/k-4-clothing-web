@@ -25,7 +25,7 @@
   <link href="Admin/css/app-style.css" rel="stylesheet"/>
   
 </head>
-<body>
+<body class="bg-theme bg-theme1">
     <!--Start sidebar-wrapper-->
      <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
        <div class="brand-logo">

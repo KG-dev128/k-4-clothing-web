@@ -2,7 +2,7 @@
 @section('title','Create')
 @section('pagedata')
 
-<div class="clearfix"></div>
+<div class="clearfix">
 	
   <div class="content-wrapper">
     <div class="container-fluid">
