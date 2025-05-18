@@ -30,8 +30,8 @@
      <div id="sidebar-wrapper" data-simplebar="" data-simplebar-auto-hide="true">
        <div class="brand-logo">
         <a href="index.html">
-         <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-         <h5 class="logo-text">Dashtreme Admin</h5>
+         <img src="Admin/images/logo-icon.png" class="logo-icon" alt="logo icon">
+         <h5 class="logo-text">K-4-clothing Admin</h5>
        </a>
      </div>
      <ul class="sidebar-menu do-nicescrol">
@@ -215,15 +215,15 @@
 
 </html>
   <!-- Bootstrap core JavaScript-->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="Admin/js/jquery.min.js"></script>
+  <script src="Admin/js/popper.min.js"></script>
+  <script src="Admin/js/bootstrap.min.js"></script>
 	
  <!-- simplebar js -->
-  <script src="assets/plugins/simplebar/js/simplebar.js"></script>
+  <script src="Admin/plugins/simplebar/js/simplebar.js"></script>
   <!-- sidebar-menu js -->
-  <script src="assets/js/sidebar-menu.js"></script>
+  <script src="Admin/js/sidebar-menu.js"></script>
   
   <!-- Custom scripts -->
-  <script src="assets/js/app-script.js"></script>
+  <script src="Admin/js/app-script.js"></script>
 	
