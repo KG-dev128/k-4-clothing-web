@@ -162,7 +162,7 @@
   <!--End topbar header-->
     @section('pagedata')
 
-    @endsection
+    @show
 
     	<!--Start footer-->
 	<footer class="footer">

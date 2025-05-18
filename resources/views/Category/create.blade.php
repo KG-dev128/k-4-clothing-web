@@ -29,6 +29,6 @@
          </div>
          </div>
       </div>
-    </div><!--End 
+    </div></div><!--End 
 
 @endsection
