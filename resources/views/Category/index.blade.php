@@ -24,8 +24,8 @@
                     <tr>
                       <th scope="row">{{$user->cat_id}}</th>
                       <td>{{$user->cat_name}}</td>
-                      <td><button class=" btn btn-success">Update data</button></td>
-                      <td><button claas=" btn btn-danger">Delete data</button></td>
+                      <td><button type="button" class="btn btn-outline-success">Update</button></td>
+                      <td><button type="button" class="btn btn-outline-danger">Delete </button></td>
                     </tr>
                         
                     @endforeach
