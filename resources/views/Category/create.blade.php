@@ -9,12 +9,13 @@
       <div class="col-lg-6">
         <div class="card">
            <div class="card-body">
-           <div class="card-title">Round Vertical Form</div>
+           <div class="card-title">Add Category</div>
            <hr>
-            <form>
+            <form method="POST" action="{{url('catSave ')}}">
+              @csrf
            <div class="form-group">
-            <label for="input-6">Name</label>
-            <input type="text" class="form-control form-control-rounded" id="input-6" placeholder="Enter Your Name">
+            <label for="input-6">Category Name</label>
+            <input type="text" name="catname" class="form-control form-control-rounded" id="input-6" placeholder="Enter Category Name">
            </div>
            <div class="form-group py-2">
              <div class="icheck-material-white">
@@ -23,7 +24,7 @@
             </div>
            </div>
            <div class="form-group">
-            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i> Register</button>
+            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i> Add Category</button>
           </div>
           </form>
          </div>

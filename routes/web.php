@@ -27,6 +27,8 @@ Route::get("cart", [HomeController::class,'Cart'] );
 Route::get("shop", [HomeController::class,'Shop'] );
 Route::get("login", [HomeController::class,'Login'] );
 
+Route::get("catIndex", [CategoryController ::class,'Index'] );
 Route::get("catCreate", [CategoryController ::class,'Create'] );
+Route::post("catSave", [CategoryController ::class,'Save'] );
 
 
