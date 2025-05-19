@@ -15,6 +15,8 @@
                     <tr>
                       <th scope="col">Category id</th>
                       <th scope="col">Category name</th>
+                      <th scope="col">Update Category </th>
+                      <th scope="col">Delete Category</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -22,8 +24,8 @@
                     <tr>
                       <th scope="row">{{$user->cat_id}}</th>
                       <td>{{$user->cat_name}}</td>
-                      <td>Cell</td>
-                      <td>Cell</td>
+                      <td><button class=" btn btn-success">Update data</button></td>
+                      <td><button claas=" btn btn-danger">Delete data</button></td>
                     </tr>
                         
                     @endforeach
