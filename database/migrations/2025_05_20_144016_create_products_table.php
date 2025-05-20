@@ -9,18 +9,18 @@ return new class extends Migration
     /**
      * Run the migrations.
      *
-     * @return void
      */
-    public function up()
+    public function up():void
     {
         Schema::create('products', function (Blueprint $table) {
-            $table->uuid("pro_id")->primary();
-            $table->string("pro_name");
-            $table->integer("pro_qty");
-            $table->decimal("pro_price");
-            $table->string("pro_image");
-            $table->string("pro_detail");
-            $table->string("CatId")->refrences('cat_id')
+            $table->uuid("Pro_Id")->primary();
+            $table->string("Pro_Name");
+            $table->integer("Pro_Qty");
+            $table->decimal("Pro_Price");
+            $table->string("Pro_Image");
+            $table->string("pro_Detail");
+            $table->integer("CatId");
+            $table->foriegn("CatId")->refrences('cat_id')
             ->on('category')->onDelete('CASCADE');
             $table->timestamps();
 
@@ -30,9 +30,8 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      *
-     * @return void
      */
-    public function down()
+    public function down():void
     {
         Schema::dropIfExists('products');
     }
