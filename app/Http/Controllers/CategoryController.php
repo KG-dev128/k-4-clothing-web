@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class CategoryController extends Controller
 {
     public function Index(){
-     $res=DB::select('select * from category');   
+     $res=DB::select('select * from  category');   
     return view("Category.index",['res'=>$res]);
     }
     public function Create(){
