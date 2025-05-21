@@ -20,7 +20,7 @@
            <div class="form-group py-2">
              <div class="icheck-material-white">
             <input type="checkbox" id="user-checkbox2" checked=""/>
-            <label for="user-checkbox2">I Agree Terms & Conditions</label>
+            <label >I Agree Terms & Conditions</label>
             </div>
            </div>
            <div class="form-group">
