@@ -23,8 +23,7 @@ return new class extends Migration
             $table->foriegn("CatId")->refrences('cat_id')
             ->on('category')->onDelete('CASCADE');
             $table->timestamps();
-
-        });
+         });
     }
 
     /**
