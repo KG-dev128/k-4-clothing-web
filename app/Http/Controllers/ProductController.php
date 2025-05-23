@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product_1;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
-class Product1Controller extends Controller
+class ProductController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +41,10 @@ class Product1Controller extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Product_1  $product_1
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function show(Product_1 $product_1)
+    public function show(Product $product)
     {
         //
     }
@@ -52,10 +52,10 @@ class Product1Controller extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Product_1  $product_1
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product_1 $product_1)
+    public function edit(Product $product)
     {
         //
     }
@@ -64,10 +64,10 @@ class Product1Controller extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Product_1  $product_1
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product_1 $product_1)
+    public function update(Request $request, Product $product)
     {
         //
     }
@@ -75,10 +75,10 @@ class Product1Controller extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Product_1  $product_1
+     * @param  \App\Models\Product  $product
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product_1 $product_1)
+    public function destroy(Product $product)
     {
         //
     }
