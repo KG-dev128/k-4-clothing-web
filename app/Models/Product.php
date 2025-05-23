@@ -11,6 +11,9 @@ class Product extends Model
         'Pro_Name',
         'Pro_Qty',
         'Pro_Price',
+        'Pro_Image',
+        'Pro_Detail',
+        'CatId',
     ];
 
 }

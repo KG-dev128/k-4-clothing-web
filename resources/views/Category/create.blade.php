@@ -1,5 +1,5 @@
 @extends('category.main')
-@section('title','Create')
+@section('title','Category Create')
 @section('pagedata')
 
 <div class="clearfix">
@@ -15,7 +15,7 @@
               @csrf
            <div class="form-group">
             <label for="input-6">Category Name</label>
-            <input type="text" name="catname" class="form-control form-control-rounded" id="input-6" placeholder="Enter Category Name">
+            <input type="text" name="catname" required class="form-control form-control-rounded" id="input-6" placeholder="Enter Category Name">
            </div>
            <div class="form-group py-2">
              <div class="icheck-material-white">

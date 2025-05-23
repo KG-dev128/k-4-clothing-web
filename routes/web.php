@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,8 +28,9 @@ Route::get("cart", [HomeController::class,'Cart'] );
 Route::get("shop", [HomeController::class,'Shop'] );
 Route::get("login", [HomeController::class,'Login'] );
 
+//Category routing
 Route::get("catIndex", [CategoryController ::class,'Index'] );
 Route::get("catCreate", [CategoryController ::class,'Create'] );
 Route::post("catSave", [CategoryController ::class,'Save'] );
 
-
+Route::resource('product',ProductController::class);
