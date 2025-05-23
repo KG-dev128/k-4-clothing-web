@@ -35,7 +35,7 @@
             <input type="text" required name="Pro_Detail" class="form-control form-control-rounded" placeholder="Desciption">
            </div>
            <div class="form-group">
-            <label>Select CatId</label><br>
+            <label>Select CatId</label>
             <select name="CatId" class="form-control form-control-rounded">
                 <option value="">Please Select Category</option>
                     @foreach ($res as $user )
@@ -52,7 +52,7 @@
             </div>
            </div>
            <div class="form-group">
-            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i> Add Category</button>
+            <button type="submit" class="btn btn-light btn-round px-5"><i class="icon-lock"></i> Add Product</button>
           </div>
           </form>
          </div>
