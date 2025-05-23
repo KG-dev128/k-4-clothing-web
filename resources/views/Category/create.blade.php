@@ -11,7 +11,7 @@
            <div class="card-body">
            <div class="card-title">Add Category</div>
            <hr>
-            <form method="POST" action="{{url('catSave ')}}">
+            <form method="POST" action="{{url('catSave')}}">
               @csrf
            <div class="form-group">
             <label for="input-6">Category Name</label>

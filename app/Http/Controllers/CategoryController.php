@@ -19,4 +19,6 @@ class CategoryController extends Controller
         DB::insert("INSERT INTO `category`(`cat_name`) VALUES (?)",[$na]);
         return view("Category.index");
     }
+
+    
 }
