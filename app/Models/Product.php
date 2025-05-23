@@ -15,5 +15,4 @@ class Product extends Model
         'Pro_Detail',
         'CatId',
     ];
-
 }

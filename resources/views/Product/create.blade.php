@@ -44,8 +44,7 @@
                       @endforeach
             </select>
            </div>
-
-           <div class="form-group py-2">
+      <div class="form-group py-2">
              <div class="icheck-material-white">
             <input type="checkbox" id="user-checkbox2" checked=""/>
             <label >I Agree Terms & Conditions</label>
@@ -58,6 +57,5 @@
          </div>
          </div>
       </div>
-    </div></div></div><!--End 
-
+    </div></div></div><!--End >
 @endsection
