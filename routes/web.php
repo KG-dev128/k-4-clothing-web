@@ -33,3 +33,12 @@ Route::get("catCreate", [CategoryController ::class,'Create'] );
 Route::post("catSave", [CategoryController ::class,'Save'] );
 
 Route::resource('product',ProductController::class);
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified'
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});
