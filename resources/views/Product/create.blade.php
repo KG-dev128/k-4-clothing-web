@@ -11,7 +11,7 @@
            <div class="card-body">
            <div class="card-title">Add Product</div>
            <hr>
-            <form method="POST" >
+         <form method="POST" action="{{ url('proSave') }}" enctype="multipart/form-data">
               @csrf
            <div class="form-group">
             <label>Product Name</label>
@@ -20,11 +20,11 @@
            
            <div class="form-group">
             <label>Product Quantity</label>
-            <input type="number" required name="Pro_Qty" class="form-control form-control-rounded" placeholder="Enter Quantity">
+            <input type="number" required min="50" name="Pro_Qty" class="form-control form-control-rounded" placeholder="Enter Quantity">
            </div>
            <div class="form-group">
             <label>Product Price</label>
-            <input type="number" required name="Pro_Price" class="form-control form-control-rounded" placeholder="Enter Product Price">
+            <input type="number" required min="500" name="Pro_Price" class="form-control form-control-rounded" placeholder="Enter Product Price">
            </div>
            <div class="form-group">
             <label>Product Image</label>

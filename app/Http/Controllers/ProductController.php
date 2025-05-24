@@ -26,9 +26,34 @@ class ProductController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
-        //
+{
+    $Pro_Name = $request->input('Pro_Name');
+    $Pro_Qty = $request->input('Pro_Qty');
+    $Pro_Price = $request->input('Pro_Price');
+    $Pro_Detail = $request->input('Pro_Detail');
+    $CatId = $request->input('CatId');
+
+    $Pro_Image = null;
+    if ($request->hasFile('Pro_Image')) {
+        $Pro_Image = $request->file('Pro_Image')->store('products', 'public');
     }
+
+    DB::insert("INSERT INTO products (Pro_Name, Pro_Qty, Pro_Price, Pro_Image, Pro_Detail, CatId, created_at, updated_at) VALUES (?, ?, ?, ?, ?, ?, NOW(), NOW())", 
+    [
+        $Pro_Name,
+        $Pro_Qty,
+        $Pro_Price,
+        $Pro_Image,
+        $Pro_Detail,
+        $CatId
+    ]);
+
+    // 🔧 Fetch products to pass to the index view
+    $res = DB::select("SELECT * FROM products");
+
+    return view("Product.index", ['res' => $res]);
+}
+
 
     /**
      * Display the specified resource.
@@ -38,7 +63,9 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
-        //
+        
+     $res=DB::select('select * from  products');   
+    return view("Product.index",['res'=>$res]);
     }
 
     /**

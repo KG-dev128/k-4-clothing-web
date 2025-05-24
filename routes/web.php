@@ -33,6 +33,9 @@ Route::get("catCreate", [CategoryController ::class,'Create'] );
 Route::post("catSave", [CategoryController ::class,'Save'] );
 
 Route::resource('product',ProductController::class);
+Route::post('/proSave', [ProductController::class, 'store']);
+
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
