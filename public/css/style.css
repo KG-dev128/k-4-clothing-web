@@ -9544,7 +9544,6 @@ a.text-dark:hover, a.text-dark:focus {
 .offer .text-md-left img {
   right: 0;
 }
-
 .cat-item .cat-img img,
 .product-item .product-img img {
   transition: .5s;
@@ -9553,7 +9552,7 @@ a.text-dark:hover, a.text-dark:focus {
 .cat-item:hover .cat-img img,
 .product-item:hover .product-img img {
   transform: scale(1.2);
-}
+  }
 
 .product-item .btn:hover {
   color: #D19C97 !important;
