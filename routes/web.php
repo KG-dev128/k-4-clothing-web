@@ -28,12 +28,14 @@ Route::get("cart", [HomeController::class,'Cart'] );
 Route::get("shop", [HomeController::class,'Shop'] );
 
 //Category routing
-Route::get("catIndex", [CategoryController ::class,'Index'] );
+Route::get("catIndex", [CategoryController ::class,'Index'] )->name('category.index');
 Route::get("catCreate", [CategoryController ::class,'Create'] );
 Route::post("catSave", [CategoryController ::class,'Save'] );
 
+
 Route::resource('product',ProductController::class);
 Route::post('/proSave', [ProductController::class, 'store']);
+
 
 
 Route::middleware([
