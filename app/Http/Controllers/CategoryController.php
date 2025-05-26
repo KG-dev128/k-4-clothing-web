@@ -10,9 +10,7 @@ class CategoryController extends Controller
     public function Index(){
         $res = DB::select('select * from category');
         return view('Category.index', ['res' => $res]);
-    }
-
-    public function Create(){
+    }    public function Create(){
         return view('Category.create');
     }
 
