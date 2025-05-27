@@ -1,7 +1,6 @@
 @extends('layout')
 @section('title','Details')
 @section('pageContent')
-    <!-- Page Header Start -->
     <div class="container-fluid bg-secondary mb-5">
         <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 300px ; background-color: rgba(231, 188, 188, 0.495)">
             <h1 class="font-weight-semi-bold text-uppercase mb-3">Shop Detail</h1>
@@ -12,8 +11,6 @@
             </div>
         </div>
     </div>
-    <!-- Page Header End -->
-    <!-- Shop Detail Start -->
     <div class="container-fluid py-5">
         <div class="row px-xl-5">
             <div class="col-lg-5 pb-5">
@@ -247,8 +244,7 @@
             </div>
         </div>
     </div>
-    <!-- Shop Detail End -->
-    <!-- Products Start -->
+
     <div class="container-fluid py-5">
         <div class="text-center mb-4">
             <h2 class="section-title px-5"><span class="px-2">You May Also Like</span></h2>
@@ -335,5 +331,5 @@
             </div>
         </div>
     </div>
-    <!-- Products End -->
+
 @endsection
