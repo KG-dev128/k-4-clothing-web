@@ -12,8 +12,6 @@
             </div>
         </div>
     </div>
-    <!-- Page Header End -->
-    <!-- Shop Start -->
     <div class="container-fluid pt-5">
         <div class="row px-xl-5">
             <!-- Shop Sidebar Start -->
