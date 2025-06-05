@@ -64,8 +64,6 @@ class ProductController extends Controller
     public function show(Product $product)
     {
         
-     $res=DB::select('select * from  products');   
-    return view("Product.index",['res'=>$res]);
     }
 
     /**
